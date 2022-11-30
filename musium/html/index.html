@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국립현대미술관</title>
+    <link rel="stylesheet" href="css/css11.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/musium.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <ol>
+               <li><a href="#">미술은행</a></li> 
+               <li><a href="#">레지던시</a></li> 
+               <li><a href="#">아카이브와 도서</a></li> 
+               <li><a href="#">어린이 미술관</a></li> 
+               <li><a href="#">MMCA 뉴스레터</a></li> 
+               <li><a href="#">소식지</a></li> 
+               <li><a href="#">온라인숍</a></li>
+               <li><a href="#">멤버쉽</a></li>
+               <li><a href="#">사이트맵</a></li>
+               <li><a href="#">Language&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></a></li> 
+            </ol>
+        </div>
+        <div id="gnb">
+            <h1><a href="#"></a></h1>
+            <ul>
+                <li><a href="#">관람안내</a></li>
+                <li><a href="#">전시</a></li>
+                <li><a href="#">교육</a></li>
+                <li><a href="#">소장품</a></li>
+                <li><a href="#">연구와 출판</a></li>
+                <li><a href="#">온라인 미술관</a></li>
+                <li><a href="#">미술관 소개</a></li>
+            </ul>
+            <div class="user">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-user-plus"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <div class="hamburger_btn"></div>
+            </div>
+        </div>
+        <div class="sub">
+            <nav id="lnb">
+                <ul>
+                    <li>
+                        <ul>
+                            <li><a href="#">과천</a></li>
+                            <li><a href="#">서울</a></li>
+                            <li><a href="#">덕수궁</a></li>
+                            <li><a href="#">청주</a></li>
+                            <li><a href="#">캘린더</a></li>
+                            <li><a href="#">전시해설</a></li>
+                            <li><a href="#">단체관람</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">전시</a></li>
+                            <li><a href="#">필름앤비디오</a></li>
+                            <li><a href="#">다윈예술</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">미술관교육소개</a></li>
+                            <li><a href="#">어린이미술관</a></li>
+                            <li><a href="#">참여신청</a></li>
+                            <li><a href="#">교육자료실</a></li>
+                            <li><a href="#">교육사진</a></li>
+                            <li><a href="#">온라인 교육 영상</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">고화질보기</a></li>
+                            <li><a href="#">소장품검색</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">온라인 미술관</a></li>
+                            <li><a href="#">오늘, 이작품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">인사말</a></li> 
+                            <li><a href="#">연혁</a></li> 
+                            <li><a href="#">조직과 미션</a></li> 
+                            <li><a href="#">MI</a></li> 
+                            <li><a href="#">연보·백서</a></li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">미술관 소개</a></li> 
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <!---------------------------------------햄버거 메뉴 시작---------------------------------------------->
+         <div class="hamburger_wrap">
+             <div class="hamburger">
+                <h1></h1>
+                 <p>로그인 후 이용해 주시기 바랍니다.&nbsp;&nbsp;></p>
+                 <ul>
+                    <li class="menu1">
+                      <a href="#">관람안내</a>
+                      <ul class="menu2">
+                        <li><a href="#">과천</a></li>
+                        <li><a href="#">서울</a></li>
+                        <li><a href="#">덕수궁</a></li>
+                        <li><a href="#">청주</a></li>
+                        <li><a href="#">캘린더</a></li>
+                        <li><a href="#">전시해설</a></li>
+                        <li><a href="#">단체관람</a></li>
+                        <li><a href="#">FAQ</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu1">
+                      <a href="#">전시</a>
+                      <ul class="menu2">
+                        <li><a href="#">전시</a></li>
+                        <li><a href="#">필름앤비디오</a></li>
+                        <li><a href="#">당윈예술</a></li>
+                        <li><a href="#">이벤트</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu1">
+                      <a href="#">교육</a>
+                      <ul class="menu2">
+                        <li><a href="#">미술관교육소개</a></li>
+                        <li><a href="#">어린이미술관</a></li>
+                        <li><a href="#">참여신청</a></li>
+                        <li><a href="#">교육자료실</a></li>
+                        <li><a href="#">교육사진</a></li>
+                        <li><a href="#">온라인 교육 영상</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu1">
+                      <a href="#">소장품</a>
+                      <ul class="menu2">
+                        <li><a href="#">고화질보기</a></li>
+                        <li><a href="#">소장품검색</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu1">
+                      <a href="#">연구와 출판</a>
+                      <ul class="menu2">
+                        <li><a href="#">온라인미술관</a></li>
+                        <li><a href="#">오늘,이작품</a></li>
+                      </ul>   
+                    </li>    
+                    <li class="menu1">
+                      <a href="#">온라인 미술관</a>
+                      <ul class="menu2">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연형</a></li>
+                        <li><a href="#">조직과미션</a></li>
+                        <li><a href="#">MI</a></li>
+                        <li><a href="#">연보·백서</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu1">
+                      <a href="#">미술관 소개</a>
+                      <ul class="menu2">
+                        <li><a href="#">미술관소개</a></li>
+                      </ul>
+                    </li>
+                             </ul> </div>
+       </div>
+        <!---------------------------------------햄버거 메뉴 끝---------------------------------------------->
+    
+    <main>
+      <div class="main_bg">
+          <div class="main_content"><p>&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.</p>
+             <p>단계적 일상회복 시행에 따른</p>
+              <p>관람인원 제한 해제</p>
+              <div class="time"> <span></span> 월. 화. 수. 목. 금. 일요일 관람시간: 10:00 ─ 18:00 <br>수. 토요일 관람시간: 10:00 ─ 21:00</div>
+              <div class="main_btn"><p>&nbsp;&nbsp;예약하기&nbsp;&nbsp;<span>></span></p></div>
+          </div>
+      </div>
+    </main>
+    <div id="onair">
+            <div class="onair_fix">
+               <h2>EXHIBITION</h2>
+                <ul id="onair_btn">
+                    <li class="onair_prev"><img src="images/onair_btn_left.png" alt="button"></li>
+                    <li class="onair_next"><img src="images/onair_btn_right.png" alt="button"></li>
+                </ul>
+            </div>
+          <div id="onair_visual_wrap">
+             <div id="onair_visual">
+                    <ul>
+                        <li class="onair_visual0">
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>서울</span></p>
+                                    <p class="onair_information"><span>프로젝트 해시태그 2021</span><br>2021.11.03 ~ 2022.02.06</p>
+                                </div>
+                            </div>
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>서울</span></p>
+                                    <p class="onair_information"><span>우리집에서, 워앤 칠</span><br>2021.08.24 ~ 2022.10.24</p>
+                                </div>
+                            </div>
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>서울</span></p>
+                                    <p class="onair_information"><span>올해의 작가상 2021</span><br>2021.10.20 ~ 2022.03.20</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="onair_visual1">
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>과천</span></p>
+                                    <p class="onair_information"><span>원형정원 프로젝트:달뿌리‒느리고 빠른 대화 온 소식, 자유의 마을</span><br>2021.11.03 ~ 2022.02.06</p>
+                                </div>
+                            </div>
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>과천</span></p>
+                                    <p class="onair_information"><span>222MMCA 현대차 시리즈2021: 문경원 & 전준호 - 미지에서 온 소식, 자유의 마을</span><br>2021.08.24 ~ 2022.10.24</p>
+                                </div>
+                            </div>
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>과천</span></p>
+                                    <p class="onair_information"><span>놀이하는 사물</span><br>2021.10.20 ~ 2022.03.20</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="onair_visual2">
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>덕수궁</span></p>
+                                    <p class="onair_information"><span>덕수궁 프로젝트 2021: 상상의 정원</span><br>2021.11.03 ~ 2022.02.06</p>
+                                </div>
+                            </div>
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>덕수궁</span></p>
+                                    <p class="onair_information"><span>DNA: 한국미술 어제와 오늘</span><br>2021.08.24 ~ 2022.10.24</p>
+                                </div>
+                            </div>
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span></span></p>
+                                    <p class="onair_information"><span></span><br></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="onair_visual3">
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>청주</span></p>
+                                    <p class="onair_information"><span>MMCA 청주프로젝트 2021《천대광: 집우집주</span><br>2021.11.03 ~ 2022.02.06</p>
+                                </div>
+                            </div>
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>청주</span></p>
+                                    <p class="onair_information"><span>미술원, 우리와 우리 사이</span><br>2021.08.24 ~ 2022.10.24</p>
+                                </div>
+                            </div>
+                            <div class="onair_visual_cont_box">
+                                <div class="onair_poster"></div>
+                                <div class="onair_local_txt">
+                                    <p class="in_local"><span>청주</span></p>
+                                    <p class="onair_information"><span>개방 수장고 개편</span><br>2021.10.20 ~ 2022.03.20</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+            </div>
+            <ul id="onair_page">
+                <li><a href="#">배너1</a></li>
+                <li><a href="#">배너2</a></li>
+                <li><a href="#">배너3</a></li>
+                <li><a href="#">배너4</a></li>
+            </ul>
+         </div>    
+    </div>
+    <!----------------------------------------------------온에어2 시작------------------------------------------------------------------->
+    <div id="onair2">
+      <div class="onair2_fix">
+           <h2>EXHIBITION</h2>
+            <ul id="btn">
+                <li class="prev"><img src="images/onair_btn_left.png" alt="button"></li>
+                <li class="next"><img src="images/onair_btn_right.png" alt="button"></li>
+            </ul>
+        </div>                       
+        <div id="visual_wrap">
+            <div id="visual">
+                <ul>
+                    <li class="visual0">
+                        <div class="cont_box">
+                            <div class="poster"></div>
+                            <div class="local_txt">
+                                <p class="in_local2"><span>서울</span></p>
+                                <p class="onair2_information"><span>프로젝트 해시태그 2021</span><br>2021.11.03 ~ 2022.02.06</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="visual1">
+                        <div class="cont_box">
+                            <div class="poster"></div>
+                            <div class="local_txt">
+                                <p class="in_local2"><span>서울</span></p>
+                                <p class="information"><span>우리집에서, 워앤 칠</span><br>2021.11.03 ~ 2022.02.06</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="visual2">
+                        <div class="cont_box">
+                            <div class="poster"></div>
+                            <div class="local_txt">
+                                <p class="in_local2"><span>과천</span></p>
+                                <p class="information"><span>원형정원 프로젝트:달뿌리‒느리고 빠른 대화 온 소식, 자유의 마을</span><br>2021.11.03 ~ 2022.02.06</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="visual3">
+                        <div class="cont_box">
+                            <div class="poster"></div>
+                            <div class="local_txt">
+                                <p class="in_local2"><span>과천</span></p>
+                                <p class="onair2_information"><span>222MMCA 현대차 시리즈2021: 문경원 & 전준호 - 미지에서 온 소식, 자유의 마을</span><br>2021.11.03 ~ 2022.02.06</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="visual4">
+                        <div class="cont_box">
+                            <div class="poster"></div>
+                            <div class="local_txt">
+                                <p class="in_local2"><span>덕수궁</span></p>
+                                <p class="onair2_information"><span>덕수궁 프로젝트 2021: 상상의 정원</span><br>2021.11.03 ~ 2022.02.06</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="visual5">
+                        <div class="cont_box">
+                            <div class="poster"></div>
+                            <div class="local_txt">
+                                <p class="in_local2"><span>덕수궁</span></p>
+                                <p class="onair2_information"><span>DNA: 한국미술 어제와 오늘</span><br>2021.11.03 ~ 2022.02.06</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="visual6">
+                        <div class="cont_box">
+                            <div class="poster"></div>
+                            <div class="local_txt">
+                                <p class="in_local2"><span>청주</span></p>
+                                <p class="onair2_information"><span>MMCA 청주프로젝트 2021《천대광: 집우집주</span><br>2021.11.03 ~ 2022.02.06</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        <ul id="page">
+            <li><a href="#">배너1</a></li>
+            <li><a href="#">배너2</a></li>
+            <li><a href="#">배너3</a></li>
+            <li><a href="#">배너4</a></li>
+            <li><a href="#">배너4</a></li>
+            <li><a href="#">배너4</a></li>
+            <li><a href="#">배너4</a></li>
+        </ul>
+      </div>
+  </div>
+    
+    <!----------------------------------------------------온에어2 끝------------------------------------------------------------------->
+    <article>
+        <div class="article_title_box">
+            <div class="con1">
+                <h2>Online Art Museum</h2>
+                 <p>집에서 만나는 미술관</p> 
+            </div>
+        </div>
+        <ul class="card">
+            <li class="con2">
+                <div class="media">
+                        <iframe width="384" height="217" src="https://www.youtube.com/embed/6hO9RYEgy4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                <div class="card_text">
+<!--                   <div class="card_text_line"></div>-->
+                    <div class="card_text_cont">
+                      <p class="age">성인</p>
+                      <p class="t_txt">[MMCA 작가와의 대화]<br>권오상 작가편 20분 영상</p>
+                      <p class="date">2021. 10. 06</p>
+                    </div>
+                </div>
+            </li>
+            <li class="con2">
+                <div class="media">
+                    <iframe width="384" height="217" src="https://www.youtube.com/embed/yYw3N0g8QsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card_text">
+                   <div class="card_text_line"></div>
+                    <div class="card_text_cont">
+                      <p class="age">성인</p>
+                      <p class="t_txt">[MMCA 작가와의 대화]<br>강애란 작가편 20분 영상</p>
+                      <p class="date">2021. 10. 01</p>
+                    </div>
+                </div>
+            </li>
+            <li class="con2">
+                <div class="media">
+                    <iframe width="384" height="217" src="https://www.youtube.com/embed/_CEbZxOZybs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card_text">
+                   <div class="card_text_line"></div>
+                    <div class="card_text_cont">
+                      <p class="age">어린이</p>
+                      <p class="t_txt">어린이를 위한 집에서<br>만나는 미술관 | 권진규 작가</p>
+                      <p class="date">2021. 10. 01</p>
+                    </div>
+                </div>
+            </li>
+            <li class="con3">
+                <div class="media">
+                        <iframe width="384" height="217" src="https://www.youtube.com/embed/6hO9RYEgy4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                <div class="card_text">
+<!--                   <div class="card_text_line"></div>-->
+                    <div class="card_text_cont">
+                      <p class="age">성인</p>
+                      <p class="t_txt">[MMCA 작가와의 대화]<br>권오상 작가편 20분 영상</p>
+                      <p class="date">2021. 10. 06</p>
+                    </div>
+                </div>
+            </li>
+            <li class="con3">
+                <div class="media">
+                    <iframe width="384" height="217" src="https://www.youtube.com/embed/yYw3N0g8QsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card_text">
+                   <div class="card_text_line"></div>
+                    <div class="card_text_cont">
+                      <p class="age">성인</p>
+                      <p class="t_txt">[MMCA 작가와의 대화]<br>강애란 작가편 20분 영상</p>
+                      <p class="date">2021. 10. 01</p>
+                    </div>
+                </div>
+            </li>
+            <li class="con3">
+                <div class="media">
+                    <iframe width="384" height="217" src="https://www.youtube.com/embed/_CEbZxOZybs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="card_text">
+                   <div class="card_text_line"></div>
+                    <div class="card_text_cont">
+                      <p class="age">어린이</p>
+                      <p class="t_txt">어린이를 위한 집에서<br>만나는 미술관 | 권진규 작가</p>
+                      <p class="date">2021. 10. 01</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="more_wrap">
+            <p>View More ></p>
+            <div class="con4"></div>
+        </div>
+    </article>
+    <section>
+        <div class="con6">
+            <h2>Collection</h2>
+            <p>국립현대미술관의 소장품 입니다.</p>
+        </div>
+        <ul class="card2">
+            <li class="con7"> 
+                <p class="name">KIM Chongtai</p>
+                <div class="card2_img">
+                </div>
+                <div class="card2_text">
+                    <p class="age2">김종태</p>
+                    <p class="t_txt2">노란 저고리</p>
+                    <p class="date2">1929</p>
+                </div>
+            </li>
+            <li class="con7">
+                <p class="name">YIM Yongryun</p>
+                <div class="card2_img">
+                </div>
+                <div class="card2_text">
+                    <p class="age2">임용련</p>
+                    <p class="t_txt2">에르블레 풍경</p>
+                    <p class="date2">1930</p>
+                </div>
+            </li>
+            <li class="con7">
+                <p class="name">LEE Insung</p>
+                <div class="card2_img">
+                </div>
+                <div class="card2_text">
+                    <p class="age2">이인성</p>
+                    <p class="t_txt2">계산동 성당</p>
+                    <p class="date2">1930년대</p>
+                </div>
+            </li>
+            <li>
+                <p class="name">SEO Dongjin</p>
+                <div class="card2_img">
+                </div>
+                <div class="card2_text">
+                    <p class="age2">서동진</p>
+                    <p class="t_txt2">뒷골목</p>
+                    <p class="date2">1932</p>
+                </div>
+            </li>
+            <li>
+                <p class="name">YOO Geuntaek</p>
+                <div class="card2_img">
+                </div>
+                <div class="card2_text">
+                    <p class="age2">유근택</p>
+                    <p class="t_txt2">유적, 혹은 군중으로부터</p>
+                    <p class="date2">1991</p>
+                </div>
+            </li>
+            <li>
+                <p class="name">KIM Chongtai</p>
+                <div class="card2_img">
+                </div>
+                <div class="card2_text">
+                    <p class="age2">이응노</p>
+                    <p class="t_txt2">황소</p>
+                    <p class="date2">1950년대</p>
+                </div>
+            </li>
+        </ul>
+        <div class="more_wrap">
+            <p>View More ></p>
+            <div class="con5"></div>
+        </div>
+    </section>
+    <div id="notice">
+        <div class="notice_title_wrap">
+            <p class="table_title">공지사항</p>
+            <p class="table_title_more"><a href="#">+ 더보기</a></p>
+        </div>
+        <span></span>
+        <table>
+            <tr>
+              <td><span class="left_data"><span>|레지던시|&nbsp;&nbsp;</span>2022년 창동레지던시 국내 입주 작가 공모 
+              서류심사 합격자 발표 및 면접심사 안내</span><span class="right_data ">2021.10.06</span></td>
+            </tr>
+            <tr>
+              <td><span class="left_data"><span>|레지던시|&nbsp;&nbsp;</span>2022년 창동레지던시 국내 입주 작가 공모 서류심사 합격자 발표 및 면접심사 안내</span><span class="right_data ">2021.10.06</span></td>
+            </tr>
+            <tr>
+              <td><span class="left_data"><span>|레지던시|&nbsp;&nbsp;</span>2022년 창동레지던시 국내 입주 작가 공모 서류심사 합격자 발표 및 면접심사 안내</span><span class="right_data ">2021.10.06</span></td>
+            </tr>
+            <tr>
+              <td><span class="left_data"><span>|레지던시|&nbsp;&nbsp;</span>2022년 창동레지던시 국내 입주 작가 공모 서류심사 합격자 발표 및 면접심사 안내</span><span class="right_data ">2021.10.06</span></td>
+            </tr>
+            <tr>
+              <td><span class="left_data"><span>|레지던시|&nbsp;&nbsp;</span>2022년 창동레지던시 국내 입주 작가 공모 서류심사 합격자 발표 및 면접심사 안내</span><span class="right_data ">2021.10.06</span></td>
+            </tr>
+            <tr>
+              <td><span class="left_data"><span>|레지던시|&nbsp;&nbsp;</span>2022년 창동레지던시 국내 입주 작가 공모 서류심사 합격자 발표 및 면접심사 안내</span><span class="right_data ">2021.10.06</span></td>
+            </tr>
+            <tr>
+              <td><span class="left_data"><span>|레지던시|&nbsp;&nbsp;</span>2022년 창동레지던시 국내 입주 작가 공모 서류심사 합격자 발표 및 면접심사 안내</span><span class="right_data ">2021.10.06</span></td>
+            </tr>
+            <tr>
+              <td><span class="left_data"><span>|레지던시|&nbsp;&nbsp;</span>2022년 창동레지던시 국내 입주 작가 공모 서류심사 합격자 발표 및 면접심사 안내</span><span class="right_data ">2021.10.06</span></td>
+            </tr>
+        </table>
+        <div class="banner">
+            <img src="images/banner1.PNG" alt="banner">
+            <img src="images/banner2.PNG" alt="banner">
+        </div>
+        <ul class="notice_icon">
+            <li><i class="far fa-calendar-alt"></i><br><span>전시일정</span></li>
+            <li><i class="fas fa-car"></i><br><span>오시는길</span></li>
+            <li><i class="fas fa-donate"></i><br><span>예술기부</span></li>
+            <li><i class="fas fa-gift"></i><br><span>이벤트</span></li>
+            <li><i class="fas fa-question"></i><br><span>1:1 문의</span>&nbsp;&nbsp;</li>
+            <li><i class="fas fa-user"></i><br><span>마이페이지</span></li>
+        </ul>
+    </div>
+    <div class="newsletter">
+            <div class="bg">
+               <h4><i class="far fa-envelope"></i>뉴스레터를 신청하세요</h4>
+                <input type="text" name="text" class="news" placeholder="E-mail을 입력하세요." required onfocus="this.placeholder=''">
+                <input type="button" name="button" class="news_btn" value="구독하기">
+            </div>
+        </div>
+    <footer>
+        <div class="footer_wrap">
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="#">미술관 소개</a></li>
+                    <li><a href="#">기증안내</a></li>
+                    <li><a href="#">후원</a></li>
+                    <li><a href="#">자원봉사</a></li>
+                    <li><a href="#">채용</a></li>
+                    <li><a href="#">보도자료</a></li>
+                    <li><a href="#">시설대관</a></li>
+                    <li><a href="#">불편부조리신고</a></li>
+                    <li><a href="#">MMCA 프렌즈</a></li>
+                    <li><a href="#">국립현대미술관 문화재단</a></li>
+                </ul>
+            </div>
+            <div class="footer_bottom">
+               <p>대표자 윤범모 | 사업자등록번호 138-83-00313<br>
+            Copyright (c)2018 National Museum of Modern and Contemporary Art, Korea All rights reserved.<br>
+            대표전화 (서울) 02-3701-9500, (과천) 02-2188-6000, (덕수궁) 02-2022-0600, (청주) 043-261-1400</p>
+                <h1><a href="#"><img src="images/logo.png" alt="logo"></a></h1>
+                <div class="list">
+                    <span>|</span>
+                    <a href="#">이용약관</a>
+                    <span>|</span>
+                    <a href="#">개인정보처리방침</a>
+                    <span>|</span>
+                    <a href="#">저작권정책</a>
+                    <span>|</span>
+                    <a href="#">국민신문고</a>
+                    <span>|</span>
+                    <a href="#">정보공개</a>
+                    <span>|</span>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

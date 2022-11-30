@@ -1,0 +1,1480 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@font-face {
+    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: sf;
+    src: url(../webfonts/SF함박눈TTF.eot); 
+    src: url(../webfonts/SF함박눈TTF.woff) format("woff"),
+         url(../webfonts/SF함박눈TTF.ttf) format("ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #ac9f65;
+}
+body {
+    font: 16px/1.6 'Noto Sans KR', sans-serif, 'Nanum Brush Script', cursive;
+    color: #ac9f65;
+    background: #320c03;
+}
+.wrap {
+    width: 100%;
+}
+.top {
+    position: relative;
+    width: 100%;
+    /*height: 1000px;*/
+}
+header {
+    width: 100%;
+    
+}
+.header_top {
+    width: 100%;
+    background: #250d04;
+}
+.header_top_wrap {
+    position: relative;
+    width: 1280px;
+    height: 100px;
+    margin: 0 auto;
+}
+.header_top_wrap h1 {
+    float: left;
+    width: 100px;
+    text-align: center;
+    line-height: 121px;
+}
+.header_top_wrap h1 img {
+    vertical-align: middle;
+}
+.header_top .gnb {
+    float: left;
+    width: 800px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 60px;
+    
+}
+.header_top .gnb li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.header_top .gnb li a {
+    position: relative;
+    font-size: 18px;
+} 
+.gnb > li > a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -9px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 1s;
+}
+.gnb > li:hover > a::after, .gnb li a.on::after{
+    transform: scaleX(1);
+}
+.sub {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+}
+#lnb_menu {
+    width: 1280px;
+    margin: 0 auto;   
+}
+#lnb_menu .lnb {
+    width: 800px;
+    margin-left: 300px;
+    overflow: hidden;
+}
+#lnb_menu .lnb > li {
+    float: left;
+    width: 25%;
+    
+}
+#lnb_menu .lnb > li >a {
+    font-size: 18px;
+}
+.lnb li ul li {
+    height: 35px;
+    text-align: center;
+}
+.lnb li ul li:hover {
+    background: #ccc;
+}
+.lnb li ul li a {
+    line-height: 35px;
+}
+.header_top_wrap ol{
+    float: right;
+    width: 100px;
+    margin-top: 60px;
+}
+.header_top_wrap ol li {
+    float: left; 
+    width: 33.33%;
+} 
+.header_top_wrap ol li a {
+    
+    font-size: 18px;
+}
+
+main {
+    width: 100%;
+    background: #250d04;
+}
+.visual_wrap_top {
+    position: relative;
+    width: 1280px;
+    height: 850px;
+    margin: 0 auto;
+    background: radial-gradient( circle closest-side at 065% 50%, #a96851 30%, #532d1f 70%,#250d04 100%);  
+}
+#visual_wrap {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+#visual {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    
+}
+#visual ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#visual ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 500px;
+    /*overflow: hidden;*/
+    z-index: 777;
+}
+.visual_img{
+    position: absolute;
+    right: 0px; 
+}
+/*-------------------글자박스시작-------------------------*/
+.visual_text {
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    bottom: 0;
+    left: 50px;
+    top: 12px;   
+}
+.visual_text img:nth-of-type(1) {
+    opacity:0.2;
+    float: left;
+}
+.visual_text .text_box {
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left:10%; 
+    z-index: 10;
+}
+.visual_text p{
+   font: 30px 'Nanum Brush Script';
+    letter-spacing: 10px;
+   
+}
+.visual_text h4{
+    font-size: 35px;
+    font-weight: normal;
+     line-height: 75%;
+}
+.visual_text h2{
+    font-family: sf;
+    font-size: 80.25px;
+    line-height: 160%;
+}
+
+.visual_text img:nth-of-type(2) {
+    position: absolute;
+    right: 60px;
+    bottom: 50%;
+    opacity: 40%;
+}
+.visual_text .box_btn a{
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    line-height: 30px;
+    border-radius: 12px;
+    background: #cf0717;
+    text-align: center;
+    bottom: 200px;
+    left: 25%;
+    color: #fff;
+}
+/*-------------------글자박스끝----------------------------*/
+/*----------------------1번페이지---------------------------------*/
+#visual .visual0 { /*메인슬라이드 한장*/
+    left: 0;  
+    top: 180px;
+    height: 463px;    
+    background: url(../images/chocopie.png) no-repeat;
+    background-position: 90% 0%;
+}
+.visual0 .visual_text {
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    bottom: 0;
+    left: 50px;
+    top: 12px;   
+}
+.visual0 .visual_text img:nth-of-type(1) {
+    opacity:0.2;
+    float: left;
+}
+.visual0 .visual_text .text_box {
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left:10%; 
+    z-index: 10;
+}
+.visual0 .visual_text p{
+   font: 30px 'Nanum Brush Script';
+    letter-spacing: 10px;
+   
+}
+.visual0 .visual_text h4{
+    font-size: 35px;
+    font-weight: normal;
+     line-height: 75%;
+}
+.visual0 .visual_text h2{
+    font-family: sf;
+    font-size: 80.25px;
+    line-height: 160%;
+}
+
+.visual0 .visual_text img:nth-of-type(2) {
+    position: absolute;
+    right: 60px;
+    bottom: 50%;
+    opacity: 40%;
+}
+.visual0 .visual_text .box_btn a{
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    line-height: 30px;
+    border-radius: 12px;
+    background: #cf0717;
+    text-align: center;
+    bottom: 200px;
+    left: 25%;
+    color: #fff;
+}
+/*-------------두번쨰 슬라이드-------------------------*/
+#visual .visual1 { 
+    left: 1280px;
+    top: 180px;
+    height: 463px;    
+    background: url(../images/chocopie_2.png) no-repeat;
+    background-size: contain;
+    background-position: 75% 20%;
+}
+.visual1 .visual_text {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    bottom: 0;
+    left: 50px;
+    top: 12px; 
+    text-align: center;
+}
+.visual1 .visual_text img {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    
+}
+.visual1 .visual_text .text_box {
+    position: absolute;
+    text-align: left;
+    top: 13%;
+    left:10%; 
+    z-index: 10;
+}
+.visual1 .visual_text p{
+   font: 30px 'Nanum Brush Script';
+    letter-spacing: 10px;
+    line-height: 27px;
+   
+}
+
+.visual1 .visual_text h2{
+    font-family: sf;
+    font-size: 75px;
+    margin-top: 7px;
+    line-height: 110%;
+}
+
+.visual1 .visual_text img:nth-of-type(2) {
+    position: absolute;
+    right: 60px;
+    bottom: 40%;
+    opacity: 40%;
+}
+.visual1 .visual_text .box_btn a{
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    line-height: 30px;
+    border-radius: 12px;
+    background: #cf0717;
+    text-align: center;
+    bottom: 40px;
+    left: 55px;
+    color: #fff;
+}
+/*.visual1 > .visual_img{
+    top: 185px;
+   
+}*/
+/*-------------세번쨰 슬라이드-------------------------*/
+#visual .visual2 { 
+    left: 1280px;
+    top: 180px;
+    height: 463px;    
+    background: url(../images/chocopie_3.png) no-repeat;
+    background-size: contain;
+    background-position: 85% 20%;
+}
+.visual2 .visual_text {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    bottom: 0;
+    left: 50px;
+    top: 12px; 
+    text-align: center;
+}
+/*.visual2 .visual_text img {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    background: red;
+}*/
+.visual2 .visual_text .text_box {
+    position: absolute;
+    text-align: center;
+    top: 13%;
+    left:10%; 
+    z-index: 10;
+}
+.visual2 .visual_text p{
+   font: 30px 'Nanum Brush Script';
+    letter-spacing: 10px;
+    line-height: 27px;
+   
+}
+
+.visual2 .visual_text h2{
+    font-family: sf;
+    font-size: 75px;
+    margin-top: 7px;
+    line-height: 110%;
+}
+
+.visual2 .visual_text img:nth-of-type(2) {
+    position: absolute;
+    right: 60px;
+    bottom: 50%;
+    opacity: 40%;
+}
+.visual2 .visual_text .box_btn a{
+    position: absolute;
+    bottom: 80px;
+    left: 22%;
+    width: 150px;
+    height: 35px;
+    line-height: 30px;
+    border-radius: 12px;
+    background: #cf0717;
+    text-align: center;
+    color: #fff;
+}
+/*-------------슬라이드 이미지 끝----------------*/
+#page {
+    position: relative;
+    top: -120px;
+    text-align: center;
+    z-index: 666;
+}
+#page li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 15px;
+}
+#page li:hover, #page li.on {
+    background: red;
+}
+#page li a {
+    display: block; /*이걸 줘야 텍스트 인던트가 먹혀*/
+    text-indent: -9999px;
+}
+
+#btn {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    z-index: 999;
+}
+#btn > li {
+    cursor: pointer;
+}
+#btn .prev{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid #ac9f65;
+    border-right: 5px solid #ac9f65;
+    transform: rotate(225deg);
+    margin: 8px 0 0 12px;     
+}
+#btn .next{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid #ac9f65;
+    border-right: 5px solid #ac9f65;
+    transform: rotate(46deg);
+    margin: 8px 0 0 12px; 
+}
+.choco {
+    position: absolute;
+    width: 1900px;
+    height: 360px;
+    background: url(../images/choco3.png);
+    left: -311px;
+    bottom: 0;
+    bottom: -15px;
+}
+
+/*
+.main_bg {
+    position: relative;
+    width: 1280px;
+    height: 852px;
+    margin: 0 auto;
+    background: radial-gradient( circle closest-side at 065% 50%, #a96851 30%, #532d1f 70%,#250d04 100%);
+}
+
+.main_btn {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 70px;
+    padding: 20px;
+    top: 42%;
+}
+.main_btn > div:nth-child(1) {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid #ac9f65;
+    border-right: 5px solid #ac9f65;
+    transform: rotate(225deg);
+    margin: 8px 0 0 12px;   
+}
+.main_btn > div:nth-child(2) {
+    float: right; 
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid #ac9f65;
+    border-right: 5px solid #ac9f65;
+    transform: rotate(46deg);
+    margin: 8px 0 0 12px; 
+}
+.main_btn > div:hover {
+    cursor: pointer;
+}
+.main_btn_bottom {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    top: 80%;
+    left: 40%;
+    text-align: center;
+    z-index: 10;
+}
+.main_btn_bottom li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    padding:0 6px;
+    margin: 0 3px;
+    font-size: 11px;
+}
+.main_btn_bottom li:hover {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pie {
+    clear: both;
+    position: absolute;
+    width: 510px;
+    height: 436px;
+    background: url(../images/chocopie.png) no-repeat;
+    right: 10%;
+    top: 25%;
+     z-index: 5;
+}
+.choco {
+    position: absolute;
+    width: 1900px;
+    height: 345px;
+    background: url(../images/choco2.png);
+    left: 2px;
+    bottom: 0;
+}
+.main_text {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    bottom: 0;
+    left: 20%;
+    top: 200px;
+    
+    
+}
+.main_text img:nth-of-type(1) {
+    opacity:0.5;
+}
+.main_text .text_box {
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left:10%; 
+    z-index: 10;
+}
+.main_text p{
+   font: 30px 'Nanum Brush Script';
+    letter-spacing: 10px;
+   
+}
+.main_text h4{
+    font-size: 35px;
+    font-weight: normal;
+     line-height: 75%;
+}
+.main_text h2{
+    font-family: sf;
+    font-size: 80.25px;
+    line-height: 160%;
+}
+
+.main_text img:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 70%;
+}
+
+.main_text .box_btn {
+   
+    
+}
+.main_text .box_btn a{
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    line-height: 30px;
+    border-radius: 12px;
+    background: #cf0717;
+    text-align: center;
+    bottom: -60px;
+    left: 25%;
+    color: #fff;
+}
+*/
+
+#taste_wrap {
+    position: relative;
+    width: 1280px;
+   /* border: 1px solid #fff;*/
+    margin: 0 auto;
+    text-align: center;
+}
+.taste_txt_wrap {
+    position: relative;
+    width: 100%;
+    height: 113px;    
+}
+.title {
+    font-family: sf;
+    font-size: 45px;
+    letter-spacing: -5px;
+    line-height: 85px;
+    margin-top: 15px;
+}
+
+#taste_wrap h3 {
+    letter-spacing: -1.5px;
+}
+#taste_wrap p {
+    font-size: 18px;
+}
+.con1 {
+ position: absolute;
+ left: 490px;  
+ top: 150px;
+ opacity: 0;
+ 
+}
+#taste_wrap ul {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    overflow: hidden;
+}
+#taste_wrap li {
+    float: left;
+    position: relative;
+    width: 320px;
+    height: 320px;
+    box-sizing: border-box;
+}
+.con2, .con3, .con4 {
+    position: absolute;
+    width: 320px;
+    top: 200px;
+    opacity: 0;
+}
+#taste_wrap li:nth-child(1)  p:nth-child(1)::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #cf0717;
+    position: relative;
+    left: -5px;
+    top: -0px;
+   
+}
+#taste_wrap li:nth-child(11)  p:nth-child(1)::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #cf0717;
+    position: relative;
+    left: -5px;
+    top: -0px;
+   
+}
+#taste_wrap li p:nth-child(1) {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 90px;
+    letter-spacing: 1.5px;
+}
+#taste_wrap li p:nth-child(2) {
+    font-size: 16px;
+    margin-top: 7px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+   /* font-weight: 500;*/
+}
+#taste_wrap li:nth-child(2) {
+    background: url(../images/taste_01.jpg)no-repeat;
+    background-size: cover;
+}
+#taste_wrap li:nth-child(4) {
+    background: url(../images/taste_02.jpg) no-repeat;
+    background-size: cover;
+}
+#taste_wrap li:nth-child(5) {
+    background: url(../images/taste_03.jpg) no-repeat;
+    background-size: cover;
+}
+#taste_wrap li:nth-child(7) {
+    background: url(../images/taste_04.jpg) no-repeat;
+    background-size: cover;
+}
+#taste_wrap li:nth-child(10) {
+    background: url(../images/taste_05.jpg) no-repeat;
+    background-size: cover;
+}
+#taste_wrap li:nth-child(12) {
+    background: url(../images/taste_06.jpg) no-repeat;
+    background-size: cover;
+}
+#history {
+    clear: both;
+    width: 1494px;
+    height: 2280px;
+    background: url(../images/choco_melt.png) no-repeat, url(../images/history_new.jpg) no-repeat;
+    background-position: -61px 0%, 34% -64%;
+    background-size: 114%, 170%;
+    margin: 0 auto;
+}
+.history_wrap {
+    width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 357px;
+    text-align: center;
+}
+.con5 {
+    position: relative;
+    top: 250px;
+    width: 1280px;
+    height: 90px;
+    opacity: 0;
+    
+}
+.con5 .title {
+    color: #4e1c0b;
+}
+.history_cont {
+    margin-top: 350px;
+    overflow: hidden;
+}
+.since_top {
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    
+}
+.since_top  h3 {
+    display: inline-block;
+    font-family: sf;
+    color: #cf0717;
+    padding-right: 15px
+}
+.since_top  h3  span {
+    font-size: 50px;
+}
+.since_top  p {
+    display: inline-block;
+    color: #4e1c0b;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    text-align: left;
+}
+
+.since {
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.since article {
+    width: 100%;
+    height: 158px;
+}
+.since:nth-child(4)  article{
+    margin-bottom: 50px;
+}
+.since:nth-child(3) > article > img {
+    margin-top: 25px;
+}
+.since:nth-child(4) > article > img {
+    margin-top: 25px;
+}
+.since  h3 {
+    font-family: sf;
+    font-size: 34px;
+    color: #cf0717;
+}
+.since  h3  span {
+    font-size: 40px;
+}
+.since  p {
+    color: #4e1c0b;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+}
+.con6, .con7, .con8, .con9  {
+    position: relative;
+    top: 250px;
+    opacity: 0;
+}
+#banner_wrap {
+    position: relative;
+}
+.banner {
+    clear: both;
+    width: 1494px;
+    height: 320px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #240e00;
+}
+.banner img {
+    height: 290px;
+}
+.banner > div {
+    width: 90%;
+    height: 320px;
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: 20% 100%;
+}
+.banner_txt {
+    position: absolute;
+    top: 25%;
+    right: 23%;
+    text-align: center;
+}
+.banner_txt h1 {
+    
+}
+.banner_txt h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.banner_txt p {
+    margin-top: 10px;
+}
+#product {
+    width: 100%;
+    height: 983px;
+}
+.title2 {
+    width: 1280px;
+    height: 85px;
+    font-family: sf;
+    font-size: 45px;
+    letter-spacing: -5px;
+    line-height: 85px;
+    margin: 0 auto 73px;
+    padding-top: 120px;
+    text-align: center;
+}
+.product_wrap {
+    position: relative;
+    width: 1494px;
+    height: 100%;
+    margin: 0 auto;
+    background: #e9eae6;
+    color: #4e1c0b;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product_wrap > ul {
+    width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.product_wrap > ul > li {
+}
+.product_wrap > ul>li>a {
+    float: left;
+    padding: 50px 40px 0 40px;
+    color: #5c524f;
+    font-weight: 400;
+}
+.product_wrap > ul>li:first-child > a {
+    padding-left: 340px;
+    box-sizing: border-box;
+}
+.product_wrap > ul>li:last-child > a {
+    margin-left: 50px;
+    font-size: 14px;
+}
+.product_wrap ol {
+    clear: both;
+    width: 1280px;
+    overflow: hidden;
+    margin: 0 auto 124px;
+}
+.card {
+    position: relative;
+    float: left;
+    width: 284px;
+    margin: 72px 13px 0;
+    
+}
+.card:first-child {
+    margin-left: 214px;
+}
+.card_img {
+    width: 284px;
+    height: 326px;
+    background: url(../images/product_01.png) no-repeat;
+    background-position: center;
+}
+.card_txt {
+    width: 100%;  
+}
+.card_txt > p:nth-child(1) {
+    font-weight: 700;
+    margin-bottom: 19px;
+    color: #000;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+} 
+.card_txt > p:nth-child(2) {
+    line-height: 25px;
+    color: #636363;
+} 
+.price {
+    width: 80%;
+    height: 43px;
+    line-height: 42px;
+    border-radius: 25px;
+    background: #cf0717;
+    text-align: center;
+    margin: 17px auto 0;
+}
+.price > p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+}
+.price p > span {
+    font-size: 17px;
+    text-decoration: line-through;
+}
+.sticker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 90px;
+}
+.product_wrap > ol > li:nth-child(1) > .sticker {
+    background: url(../images/product_best.png);
+}
+.product_wrap > ol > li:nth-child(2) > .sticker {
+    background: url(../images/product_best.png);
+    background-position: 68px 0px;
+}
+.product_wrap > ol > li:nth-child(3) > .sticker {
+    background: url(../images/product_best.png);
+    background-position: 137px 0px;
+}
+.product_btn {
+    position: absolute;
+    top: 55%;
+    left: 7%;
+    overflow: hidden;
+    width: 1280px;
+    margin: 0 auto;
+    
+}
+.product_btn > div {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #4e1c0b;
+}
+.product_btn > div:hover {
+    cursor: pointer;
+}
+.l_arr {
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #121212;
+    border-right: 5px solid #121212;
+    transform: rotate(225deg);
+    margin: 8px 0 0 12px; 
+}
+.product_btn .right {
+    float: right;
+}
+.r_arr {
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #121212;
+    border-right: 5px solid #121212;
+    transform: rotate(46deg);
+    margin: 8px 0 0 3px; 
+}
+/*-------------------------------------------------------------------------------*/
+.product {
+    width: 1494px;
+    margin: 0 auto;
+    background: #e9eae6;
+    color: #4e1c0b; 
+}
+.con10 {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+}
+.product > .title {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 85px;
+}
+#product_visual_wrap { /*얘로 전체 사이즈 조절할 수 있음.*/
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+#product_visual {
+    width: 1100px;
+    height: 580px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#product_visual ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#product_visual ul li {
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#product_visual .product_visual0 {
+    left: 0;
+}
+#product_visual .product_visual1 {
+    left: 1100px;
+}
+#product_visual .product_visual2 {
+    left: 2200px;
+}
+#product_visual .product_visual3 {
+    left: 3300px;
+}
+.product_visual_wrap {
+    float: left;
+    width: 220px;
+    height: 507px;
+    margin: 0 27px; 
+}
+.product_img_box {
+    float: left;
+    width: 220px;
+    height: 326px;
+}
+/*------------------------------이미지시작-----------------------------------*/
+.product_visual0 > .product_visual_wrap:nth-child(1)  > .product_img_box{
+   background: url(../images/product_01.png) no-repeat, url(../images/product_sticker_02.png) no-repeat;    
+   background-position: 45% 65%, 0 4%; 
+  
+}
+.product_visual0 > .product_visual_wrap:nth-child(2)  > .product_img_box{
+   background: url(../images/product_02.png) no-repeat, url(../images/product_sticker_01.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;   
+}
+.product_visual0 > .product_visual_wrap:nth-child(3)  > .product_img_box{
+   background: url(../images/product_03.png) no-repeat, url(../images/product_sticker_03.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;    
+}
+.product_visual0 > .product_visual_wrap:nth-child(4)  > .product_img_box{
+   background: url(../images/product_04.png) no-repeat, url(../images/product_sticker_02.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;   
+}
+.product_visual1 > .product_visual_wrap:nth-child(1)  > .product_img_box{
+   background: url(../images/product_02.png) no-repeat, url(../images/product_sticker_03.png) no-repeat;    
+   background-position: 45% 65%, 0 4%; 
+  
+}
+.product_visual1 > .product_visual_wrap:nth-child(2)  > .product_img_box{
+   background: url(../images/product_03.png) no-repeat, url(../images/product_sticker_03.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;   
+}
+.product_visual1 > .product_visual_wrap:nth-child(3)  > .product_img_box{
+   background: url(../images/product_01.png) no-repeat, url(../images/product_sticker_03.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;    
+}
+.product_visual1 > .product_visual_wrap:nth-child(4)  > .product_img_box{
+   background: url(../images/product_04.png) no-repeat, url(../images/product_sticker_03.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;   
+}
+.product_visual2 > .product_visual_wrap:nth-child(1)  > .product_img_box{
+   background: url(../images/product_05.png) no-repeat, url(../images/product_sticker_02.png) no-repeat;    
+   background-position: 45% 65%, 0 4%; 
+  
+}
+.product_visual2 > .product_visual_wrap:nth-child(2)  > .product_img_box{
+   background: url(../images/product_06.png) no-repeat, url(../images/product_sticker_03.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;   
+}
+.product_visual2 > .product_visual_wrap:nth-child(3)  > .product_img_box{
+   background: url(../images/product_07.png) no-repeat, url(../images/product_sticker_03.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;    
+}
+.product_visual2 > .product_visual_wrap:nth-child(4)  > .product_img_box{
+   background: url(../images/product_08.png) no-repeat, url(../images/product_sticker_01.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;   
+}
+.product_visual3 > .product_visual_wrap:nth-child(1)  > .product_img_box{
+   background: url(../images/product_02.png) no-repeat, url(../images/product_sticker_01.png) no-repeat;    
+   background-position: 45% 65%, 0 4%; 
+  
+}
+.product_visual3 > .product_visual_wrap:nth-child(2)  > .product_img_box{
+   background: url(../images/product_02.png) no-repeat, url(../images/product_sticker_01.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;   
+}
+.product_visual3 > .product_visual_wrap:nth-child(3)  > .product_img_box{
+   background: url(../images/product_02.png) no-repeat, url(../images/product_sticker_01.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;    
+}
+.product_visual3 > .product_visual_wrap:nth-child(4)  > .product_img_box{
+   background: url(../images/product_02.png) no-repeat, url(../images/product_sticker_01.png) no-repeat;    
+   background-position: 45% 65%, 0 4%;   
+}
+/*------------------------------이미지끝-----------------------------------*/
+.product_txt_box {
+    float: left;
+    width: 220px;
+    height: 181px;
+    margin-right: 20px;
+    text-align: center;
+}
+.product_txt_box p:nth-child(1){
+    font-size: 17px;
+    margin-bottom: 19px;
+    color: #4e1c0b;
+    letter-spacing: 0.2px;
+}
+.product_txt_box p:nth-child(2){
+    font-size: 16px;
+    color: #636363;
+    margin-bottom: 19px;
+}
+.product_txt_box p:nth-child(3) {
+    width: 80%;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: normal;
+    background: #cf0717;
+    text-align: center;
+    margin:  20px auto 0;
+    color: #fff;
+    
+}
+.product_txt_box p:nth-child(3) > span {
+    font-size: 15px;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+#product_page {
+    position: relative;
+    top: -624px;
+    left: -25px;
+    text-align: center;
+}
+#product_page li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 37px;
+}
+#product_page li:hover, #product_page li.on {
+    font-weight: 700;
+    color: #761e00; 
+}
+#product_page li a {
+    color: #6b554e; 
+}
+#product_btn {
+    position: absolute;
+    top: 45%;
+    width: 1280px;
+}
+#product_btn li {
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #4e1c0b;
+    text-align: center;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+.product_prev > div {
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #4e1c0b;
+    border-right: 5px solid #4e1c0b;
+    transform: rotate(225deg);
+    margin-left: 15px;
+    margin-top: -17px;
+}
+.product_next > div {
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #4e1c0b;
+    border-right: 5px solid #4e1c0b;
+    transform: rotate(44deg);
+    margin-left: 5px;
+    margin-top: -15px;
+}
+#product_btn li:nth-child(1) {
+    float: left;
+}
+#product_btn li:nth-child(1) {
+    float: right;
+}
+/*---------------------------------------------------------------------------------------*/
+#store{
+    position: relative;
+    width: 1494px;
+    height: 1050px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #ac9f65;
+    color: #320c03;
+    text-align: center;
+}
+.store_bg {
+    position: absolute;
+    top: 194px;
+    left: 129px;  
+    width: 1494px;
+    height: 834px;
+    background: url(../images/store.png) no-repeat;
+    background-position: 64% 113%;
+    background-size: 90%;    
+    opacity: 0.5;
+}
+.store_wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+.con11 {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+}
+.title3 {
+    font-family: sf;
+    font-size: 45px;
+    letter-spacing: -5px;
+    line-height: 85px;
+    margin-top: 120px;
+}
+#store_visual_wrap {
+    position: relative;
+    width: 1280px;
+    margin: 50px auto 0;
+}
+#store_visual {}
+#store_visual ul {
+    position: relative;
+    width: 1280px;
+    height: 427px;
+    overflow: hidden;
+    
+}
+#store_visual ul li {
+    position: absolute; 
+    width: 1280px;
+    height: 427px;
+    z-index: 777;
+    /*display: none;*/
+}
+.txt_box {
+    display: inline-block;
+    width: 605px;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 80px;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+.store_txt_title {
+    font-size: 38px;
+    padding-top: 150px;
+    text-align: left;
+}
+.txt_box div:nth-child(2) {
+   font-size: 16px;
+    text-align: left;
+    padding-top: 31px;
+}
+.txt_box div:nth-child(2) > i {
+    color: #cf0717;
+}
+.image_box {
+    display: inline-block;
+    width: 608px;
+    height: 358px;
+    overflow: hidden;
+}
+.store_visual0 .image_box{
+    /*background: #f00;*/
+    background: url(../images/store_shop_01.png);
+    background-size: cover;
+    background-position: center;
+}
+.store_visual1 .image_box {
+    /*background: #ff0;*/
+    background: url(../images/store_shop_02.png);
+    background-size: cover;
+    background-position: center;
+}
+.store_visual2 .image_box{
+   /* background: #0f0;*/
+    background: url(../images/store_shop_03.png);
+    background-size: cover;
+    background-position: center;
+}
+.store_visual3 .image_box{
+    /*background: #00f;*/
+    background: url(../images/store_shop_03.png);
+    background-size: cover;
+    background-position: center;
+}
+.image_box_bg {
+    width: 675px;
+    height: 427px;
+    border-radius: 40px;
+    background: #fff;
+    overflow: hidden;  
+}
+#store_page {
+    position: relative;
+    top: -306px;
+    left: 113px;
+    width: 400px;
+    text-align: center;
+    z-index: 999;
+}
+#store_page::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #000;   
+}
+#store_page li {
+    width: 72px;
+    height: 72px;
+    background: url(../images/store_icon_white.png) no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 23px;
+    padding-bottom: 17px;
+}
+#store_page li:hover, #store_page li.on {
+    background: url(../images/store_icon.png) no-repeat;
+}
+#store_page li a {
+    display: block; /*이걸 줘야 텍스트 인던트가 먹혀*/
+    text-indent: -9999px;
+}
+.image_bg {
+    position: absolute;
+    top: 39px;
+    right: -4px;
+    width: 675px;
+    height: 427px;
+    border-radius: 40px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+#btn {
+    text-align: center; /*이것은 버튼이 가운데로 가는 값*/
+}
+#btn li {
+    display: inline-block; /*이것은 버튼안의 글자가 가운데로 가는 값*/
+    width: 100px;
+    /*border: 1px solid #000;*/
+    text-align: center;
+    cursor: pointer;
+}
+.footer_choco {
+    position: relative;
+    left: -110px;
+    bottom: 0px;
+    transform: rotate(180deg);
+    width: 1600px;
+    height: 281px;
+    background: url(../images/choco_melt.png);
+    
+}
+
+#footer {
+    overflow: hidden;
+    width: 100%;
+}
+.footer_wrap {
+    position: relative;
+    width: 1494px;
+    overflow: hidden;
+    margin: 0 auto;
+    color: #ac9f65;
+    background: #320c03;
+    padding-bottom: 30px;
+   /* border: 2px solid #fff;*/
+}
+.footer_wrap div {
+    float: left;
+}
+
+.footer_txt01 {
+   margin-right: 30px;
+   margin-left: 80px;    
+   line-height: 27px;
+}
+.footer_txt02 {
+    line-height: 27px;
+    margin-left: 80px;
+}
+.footer_logo {
+    float: right;
+    margin-right: 70px;
+}
+.footer_wrap > ul {
+    position: absolute;
+    right: 70px;
+    top: 100px;
+    overflow: hidden;
+}
+.footer_wrap > ul > li {
+    float: left;
+    padding: 0 20px;
+}
+.footer_wrap  ul li  i {
+    font-size: 30px;
+}
+
